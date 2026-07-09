@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empatia e Cooperação no Ambiente Profissional</title>
+    <title>Empatia & Cooperação: Nossa Superforça!</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
     
     <style>
-        /* Reset e Configurações Base */
+        /* Configurações Globais - Estilo Divertido e Amigável */
         * {
             margin: 0;
             padding: 0;
@@ -18,191 +18,143 @@
         }
 
         body {
-            background-color: #fcfbfe; /* Fundo off-white com sutil toque de roxo */
-            color: #1a1121; /* Roxo quase preto para alto contraste e legibilidade */
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            line-height: 1.7;
-            padding: 0;
+            background-color: #f3ebfa; /* Roxo bem clarinho de fundo */
+            color: #3d2647; /* Roxo escuro para leitura confortável */
+            font-family: 'Fredoka', system-ui, sans-serif; /* Fonte arredondada e informal */
+            line-height: 1.6;
+            padding-bottom: 40px;
         }
 
-        /* Linha de destaque minimalista no topo */
-        .top-bar {
-            height: 6px;
-            background: linear-gradient(90deg, #4a148c, #7b1fa2);
-            width: 100%;
-        }
-
-        /* Cabeçalho Principal (Amplo e Focado) */
+        /* Cabeçalho */
         header {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 100px 24px 60px 24px;
-            text-align: left;
+            background: linear-gradient(135deg, #8e44ad, #6c3483); /* Degradê roxo vibrante */
+            color: #ffffff;
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 8px solid #f1c40f; /* Detalhe amarelo para contrastar e dar alegria */
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            color: #3b1166;
-            line-height: 1.2;
-            margin-bottom: 20px;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         header p {
-            font-size: 1.4rem;
-            color: #665577;
-            font-weight: 300;
-            max-width: 700px;
-        }
-
-        /* Container de Conteúdo Expandido */
-        .main-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 24px 120px 24px;
-        }
-
-        /* Seções de Texto Estilo Bloco Editorial */
-        .section-block {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            padding: 60px 0;
-            border-top: 1px solid #e6dfeb;
-        }
-
-        @media (min-width: 768px) {
-            .section-block {
-                grid-template-columns: 300px 1fr;
-                gap: 40px;
-            }
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #4a148c;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .section-text {
             font-size: 1.2rem;
-            color: #2d2238;
-            font-weight: 400;
+            font-weight: 300;
         }
 
-        .section-text p {
-            margin-bottom: 24px;
+        /* Layout Principal */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        /* Lista de Práticas com Design Limpo */
-        .practice-list {
-            list-style: none;
-            margin-top: 20px;
+        /* Cards de Conteúdo */
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 20px;
+            border: 3px solid #dcd0f2; /* Borda roxa suave */
+            box-shadow: 0 6px 0px #dcd0f2; /* Efeito cartoon/divertido na sombra */
+            transition: transform 0.2s;
+            margin-bottom: 25px;
         }
 
-        .practice-item {
+        .card:hover {
+            transform: translateY(-3px); /* Levanta de leve ao passar o mouse */
+        }
+
+        .card h2 {
+            color: #7d3c98;
+            margin-bottom: 12px;
+            font-size: 1.6rem;
+        }
+
+        /* Card Destacado (Lista) */
+        .card-destaque {
+            background-color: #ebd1f7; /* Roxo médio de fundo */
+            padding: 25px;
+            border-radius: 20px;
+            border: 3px dashed #8e44ad; /* Borda tracejada divertida */
+            margin-bottom: 25px;
+        }
+
+        .card-destaque h2 {
+            color: #4a148c;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none; /* Remove as bolinhas padrão */
+        }
+
+        li {
+            margin-bottom: 12px;
+            padding-left: 25px;
             position: relative;
-            padding-left: 32px;
-            margin-bottom: 20px;
-            font-size: 1.15rem;
-            color: #443355;
         }
 
-        /* Indicador minimalista roxo */
-        .practice-item::before {
-            content: "";
+        /* Adiciona um detalhe roxo fofo antes de cada item da lista */
+        li::before {
+            content: "💜";
             position: absolute;
             left: 0;
-            top: 12px;
-            width: 12px;
-            height: 2px;
-            background-color: #7b1fa2;
+            top: 0;
         }
 
-        /* Rodapé Institucional */
+        /* Rodapé */
         footer {
-            background-color: #1a1121;
-            color: #e6dfeb;
-            padding: 60px 24px;
-            margin-top: auto;
-        }
-
-        .footer-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        @media (min-width: 768px) {
-            .footer-container {
-                flex-direction: row;
-                align-items: center;
-            }
-        }
-
-        footer p {
-            font-size: 0.95rem;
-            color: #a699b3;
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7d3c98;
+            font-size: 1.1rem;
         }
 
         footer strong {
-            color: #ffffff;
-            font-weight: 500;
+            color: #4a148c;
+            background-color: #ebd1f7;
+            padding: 2px 8px;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
 
-    <div class="top-bar"></div>
-
     <header>
-        <h1>Empatia &<br>Cooperação</h1>
-        <p>Os pilares fundamentais para a construção de ambientes de alta performance, inovação sustentável e relações interpessoais sólidas.</p>
+        <h1>💜 Empatia & Cooperação 💜</h1>
+        <p>Mudar o mundo é mais divertido quando a gente faz isso junto!</p>
     </header>
 
-    <main class="main-content">
-        
-        <section class="section-block">
-            <h2 class="section-title">Perspetiva</h2>
-            <div class="section-text">
-                <p>A empatia no contexto institucional vai além do entendimento puramente emocional. Ela se traduz como a capacidade analítica e humana de compreender os vetores que motivam, desafiam e impactam os indivíduos à nossa volta.</p>
-                <p>Desenvolver uma postura empática permite mitigar ruídos de comunicação, alinhar expectativas e criar uma base de confiança mútua indispensável para qualquer evolução coletiva.</p>
-            </div>
+    <main class="container">
+        <section class="card">
+            <h2>✨ O que é Empatia?</h2>
+            <p>Empatia é como colocar os óculos de outra pessoa para enxergar o mundo com os olhos dela. É tentar entender os sentimentos, as dores e as alegrias de quem está do nosso lado, sem julgar. É um superpoder que todo mundo pode desenvolver!</p>
         </section>
 
-        <section class="section-block">
-            <h2 class="section-title">Sinergia</h2>
-            <div class="section-text">
-                <p>Cooperar significa coordenar esforços de maneira estratégica para atingir metas que superam o alcance individual. Em ecossistemas modernos, a cooperação substitui silos isolados por redes dinâmicas de colaboração.</p>
-                <p>Quando a inteligência coletiva é priorizada, os processos tornam-se mais ágeis, os problemas encontram resoluções mais robustas e o crescimento passa a ser um ativo compartilhado.</p>
-            </div>
+        <section class="card">
+            <h2>🤝 O Poder da Cooperação</h2>
+            <p>Se a empatia nos faz sentir, a cooperação nos faz agir! Cooperar é unir forças por um objetivo comum. Quando dividimos o peso de uma tarefa e somamos os talentos de cada um, o resultado é sempre incrível e a jornada fica muito mais leve.</p>
         </section>
 
-        <section class="section-block">
-            <h2 class="section-title">Diretrizes</h2>
-            <div class="section-text">
-                <p>A implementação prática desses conceitos exige consistência através de ações objetivas no cotidiano:</p>
-                <ul class="practice-list">
-                    <li class="practice-item"><strong>Escuta Ativa:</strong> Garantir atenção plena às interações, focando na absorção real do conteúdo antes da formulação de respostas.</li>
-                    <li class="practice-item"><strong>Cultura de Suporte:</strong> Identificar proativamente gargalos operacionais ou sobrecargas na equipe e oferecer apoio técnico ou estratégico.</li>
-                    <li class="practice-item"><strong>Comunicação Transparente:</strong> Compartilhar informações relevantes de forma clara e acessível, eliminando barreiras organizacionais.</li>
-                </ul>
-            </div>
+        <section class="card-destaque">
+            <h2>🚀 Como praticar no dia a dia?</h2>
+            <ul>
+                <li><strong>Escute de verdade:</strong> Ouça os amigos sem pensar no que vai responder em seguida.</li>
+                <li><strong>Gentileza gera gentileza:</strong> Um sorriso ou um "tudo bem?" sincero mudam o dia de alguém.</li>
+                <li><strong>Divida a carga:</strong> Se vir alguém sobrecarregado, ofereça uma mãozinha!</li>
+            </ul>
         </section>
-
     </main>
 
     <footer>
-        <div class="footer-container">
-            <p>Projeto desenvolvido por: <strong>[Gustavo Duarte]</strong></p>
-            <p>&copy; 2026 — Plataforma de Conscientização Corporativa.</p>
-        </div>
+        <p>Criado com muito carinho por <strong>[Seu Nome Aqui]</strong> ✨</p>
+        <p>Conectando corações e espalhando boas vibes!</p>
     </footer>
 
 </body>
